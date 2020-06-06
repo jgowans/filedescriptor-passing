@@ -2,6 +2,8 @@ init
 sender
 receiver
 *.swp
+rs/Cargo.lock
+rs/target
 
 # Prerequisites
 *.d
