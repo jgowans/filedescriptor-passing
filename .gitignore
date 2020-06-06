@@ -1,6 +1,7 @@
 init
 sender
 receiver
+*.swp
 
 # Prerequisites
 *.d

@@ -10,6 +10,7 @@ int main(int argc, char **argv) {
 
 	ret = socketpair(AF_UNIX, SOCK_DGRAM, 0, sv);
 	printf("socket pair returned: %i\n", ret);
+	printf("got socket fds: %i and %i\n", sv[0], sv[1]);
 
 	if (!fork()) {
 		execl("./sender", "sender", NULL);
