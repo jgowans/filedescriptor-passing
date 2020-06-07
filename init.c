@@ -17,7 +17,8 @@ int main(int argc, char **argv) {
 	}
 
 	if (!fork()) {
-		execl("./receiver", "receiver", NULL);
+		execl("./rs/target/debug/rs", "receiver", NULL);
+		//execl("./receiver", "receiver", NULL);
 	}
 
 	printf("Init's pid is %i\n", getpid());
